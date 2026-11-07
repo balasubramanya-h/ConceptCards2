@@ -7,7 +7,7 @@
     "dev": "concurrently -n \"API,CLIENT\" -c \"blue,green\" \"npm run dev:api\" \"npm run dev:client\"",
     "dev:api": "node api/index.js",
     "dev:client": "npm run dev --prefix client",
-    "build": "npm install --prefix client && npm run build --prefix client",
+    "build": "npm install --prefix client && npm run build --prefix client && node -e \"const fs=require('fs'); if(fs.existsSync('dist') && !fs.existsSync('client/dist')) { fs.cpSync('dist', 'client/dist', {recursive:true}); } else if(fs.existsSync('client/dist') && !fs.existsSync('dist')) { fs.cpSync('client/dist', 'dist', {recursive:true}); }\"",
     "install:all": "npm install && npm install --prefix client",
     "seed": "node scripts/seed.js",
     "verify": "node scripts/verify.js",
