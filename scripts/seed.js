@@ -8,10 +8,10 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 dotenv.config();
 
-const User = require('../api/models/User');
-const Deck = require('../api/models/Deck');
-const Card = require('../api/models/Card');
-const ReviewLog = require('../api/models/ReviewLog');
+const User = require('../server/models/User');
+const Deck = require('../server/models/Deck');
+const Card = require('../server/models/Card');
+const ReviewLog = require('../server/models/ReviewLog');
 
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/conceptcards';
 

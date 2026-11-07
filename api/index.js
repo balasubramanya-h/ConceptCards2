@@ -5,12 +5,12 @@ const dotenv = require('dotenv');
 // Load environment variables
 dotenv.config();
 
-const connectDB = require('./config/db');
-const authRoutes = require('./routes/auth.routes');
-const deckRoutes = require('./routes/deck.routes');
-const cardRoutes = require('./routes/card.routes');
-const studyRoutes = require('./routes/study.routes');
-const errorHandler = require('./middleware/errorHandler');
+const connectDB = require('../server/config/db');
+const authRoutes = require('../server/routes/auth.routes');
+const deckRoutes = require('../server/routes/deck.routes');
+const cardRoutes = require('../server/routes/card.routes');
+const studyRoutes = require('../server/routes/study.routes');
+const errorHandler = require('../server/middleware/errorHandler');
 
 const app = express();
 

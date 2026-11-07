@@ -4,8 +4,8 @@
  * and API integration logic.
  */
 
-const { calculateSM2, getIntervalPreviews, formatIntervalText } = require('../api/utils/sm2');
-const { calculateTextSimilarity, findDuplicates, cleanText } = require('../api/utils/duplicateDetector');
+const { calculateSM2, getIntervalPreviews, formatIntervalText } = require('../server/utils/sm2');
+const { calculateTextSimilarity, findDuplicates, cleanText } = require('../server/utils/duplicateDetector');
 
 function runTest(name, fn) {
   try {

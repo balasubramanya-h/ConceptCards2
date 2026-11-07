@@ -9,12 +9,12 @@ const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken');
 
 // Import models & utilities
-const User = require('../api/models/User');
-const Deck = require('../api/models/Deck');
-const Card = require('../api/models/Card');
-const ReviewLog = require('../api/models/ReviewLog');
-const { calculateSM2 } = require('../api/utils/sm2');
-const { findDuplicates } = require('../api/utils/duplicateDetector');
+const User = require('../server/models/User');
+const Deck = require('../server/models/Deck');
+const Card = require('../server/models/Card');
+const ReviewLog = require('../server/models/ReviewLog');
+const { calculateSM2 } = require('../server/utils/sm2');
+const { findDuplicates } = require('../server/utils/duplicateDetector');
 
 async function runIntegrationTests() {
   console.log('\n======================================================');
