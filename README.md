@@ -1,3 +1,5 @@
+Deployed Link: https://concept-cards2-client-wjpz.vercel.app/
+
 # ConceptCards 🧠✨
 
 > Production-ready, collaborative flashcard platform featuring **intelligent duplicate prevention**, **deep hierarchical organization**, and **automated SuperMemo-2 (SM-2) spaced repetition scheduling**.
